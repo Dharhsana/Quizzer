@@ -1,0 +1,17 @@
+package com.service;
+
+import java.util.List;
+
+import com.model.AnswerModel;
+
+public interface AnswerService<T> {
+
+	public boolean save(T model);
+	public boolean save(List<T> model);
+	public boolean update(T model);
+	public T getOneById(long id);
+	public T getOneByUEId(String ueid);
+	public T getOneByName(String name);
+	public boolean remove(long id);
+	boolean update(List<T> models);
+}
